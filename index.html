@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="signUp">
+        <h1>הרשמה</h1>
+        <p>להרשמה למערכת יש למלא את הטופס.</p>
+
+        <div class="form">
+            <div class="form-group">
+                <label for="firstName">שם פרטי</label><br>
+                <input type="text" id="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">שם משפחה</label><br>
+                <input type="text" id="lastName">
+            </div>
+            <div class="form-group">
+                <label for="mailInput">דוא"ל (שם משתמש)</label><br>
+                <input type="email" id="mailInput">
+            </div>
+            <div class="form-group">
+                <label for="userPass">סיסמא</label><br>
+                <input type="text" id="userPass">
+            </div>
+            <div class="form-group btn">
+                <input onclick="newUser()" type="submit" id="subBtn" value="הרשמה">
+            </div>
+        </div>
+    </div>
+    <div class="logIn">
+        <h2>התחברות</h2>
+        <p>להתחברות למערכת יש להזין פרטים</p>
+
+        <div class="form">
+            <div class="form-group">
+                <label for="logEmail">מייל:</label>
+                <input type="email" id="logEmail">
+            </div>
+            <div class="form-group">
+                <label for="logPass">סיסמא:</label>
+                <input type="text" id="logPass">
+            </div>
+            <div class="form-group btn">
+                <input onclick="userConnect()" type="submit" value="התחברות">
+            </div>
+        </div>
+    </div>
+    <div class="userTable">
+        <h2>רשימת משתמשים</h2>
+        <p>להרשמה למערכת יש למלא את הטופס.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>שם פרטי</th>
+                    <th>שם משפחה</th>
+                    <th>דוא"ל</th>
+                    <th>סיסמא</th>
+                    <th>סטטטוס חיבור</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
